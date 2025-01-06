@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Tumhara main branch name
+      - main  # Your main branch name
 
 jobs:
   deploy:
@@ -13,8 +13,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token  : ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  # Tumhara main project directory, agar tumhara HTML, CSS, JS direct root mein hai
+          github_token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+          publish_dir: ./ # If your HTML, CSS, and JS are in the root directory
