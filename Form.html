@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'">
     <title>Document</title>
     <link href="output.css" rel="stylesheet">
 </head>
 <body>
+  <nav class="shadow-lg w-[100px] st bg-[#483fc9] flex flex-col py-4 h-auto ml-5 rounded-xl">
+    <div class="container mx-auto px-4">
+      <!-- Desktop Navigation Links -->
+      <div class="flex flex-col space-y-4">
+        <a href="#" class="text-white text-lg transition hover:text-yellow-400">Home</a>
+        <a href="#" class="text-white text-lg transition hover:text-yellow-400">About</a>
+        <a href="#" class="text-white text-lg transition hover:text-yellow-400">Services</a>
+
+        <!-- Dropdown -->
+        <div class="relative dropdown">
+          <a href="#" class="text-white text-lg transition hover:text-yellow-400">More</a>
+          <div class="dropdown-menu">
+            <a href="#" class="text-gray-800 hover:bg-gray-100">Portfolio</a>
+            <a href="#" class="text-gray-800 hover:bg-gray-100">Testimonials</a>
+            <a href="#" class="text-gray-800 hover:bg-gray-100">Blog</a>
+          </div>
+        </div>
+
+        <a href="#" class="text-white text-lg transition hover:text-yellow-400">Contact</a>
+      </div>
+    </div>
+  </nav>
     <form id="form" action="" onsubmit="handleSubmit(event)">
         <div class="space-y-12">
 

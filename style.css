@@ -3,3 +3,24 @@
 @tailwind utilities;
 
 /* آپ اپنی کسٹم اسٹائلز بھی یہاں لکھ سکتے ہیں */
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    z-index: 10;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    white-space: nowrap;
+  }
